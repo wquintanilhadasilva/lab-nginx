@@ -1,0 +1,5 @@
+# Enable recommended base configuration
+Include /etc/nginx/modsec/owasp-modsecurity-crs/crs-setup.conf
+
+# Enable Core Rule Set
+Include /etc/nginx/modsec/owasp-modsecurity-crs/rules/*.conf
