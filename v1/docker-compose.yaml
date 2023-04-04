@@ -10,9 +10,9 @@ services:
     ports:
       - 80:80
       - 443:443
-    volumes:
-      - ./cfg:/etc/nginx/conf.d/
-      - ./certs:/etc/ssl/private
+    # volumes:
+    #   - ./cfg:/etc/nginx/conf.d/
+    #   - ./certs:/etc/ssl/private
 
   app:
     container_name: app
