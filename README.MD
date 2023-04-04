@@ -22,17 +22,35 @@ Common Name (e.g. server FQDN or YOUR name) []:lab
 Email Address []:lab@mail.com
 ```
 
-
+```
 sudo apt-get install libnginx-mod-security
+```
 
+```
 /etc/nginx/nginx.conf
  bloco http
 modsecurity on;
+```
 
-
+```
 /etc/nginx/modsec/main.conf
 Include /etc/nginx/modsec/modsecurity.conf
 Include /etc/nginx/modsec/owasp-modsecurity-crs/crs-setup.conf
 Include /etc/nginx/modsec/owasp-modsecurity-crs/rules/*.conf
 
 sudo systemctl restart nginx
+```
+
+Install vi in nginx image
+```
+docker exec -it reverse bash -c "apt-get update && apt-get install -y vim"
+```
+
+```
+docker exec reverse nginx -t
+```
+
+```
+docker exec reverse nginx -s reload
+
+```
