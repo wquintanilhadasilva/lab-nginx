@@ -1,4 +1,0 @@
-SecRuleEngine On
-
-Include /etc/nginx/modsec/owasp-modsecurity-crs/crs-setup.conf
-Include /etc/nginx/modsec/owasp-modsecurity-crs/rules/*.conf

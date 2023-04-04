@@ -1,3 +1,0 @@
-[submodule "etc/modsecurity/crs"]
-	path = etc/modsecurity/crs
-	url = https://github.com/SpiderLabs/owasp-modsecurity-crs.git
